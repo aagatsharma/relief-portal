@@ -1,15 +1,15 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { useTranslation } from 'react-i18next'
-import { useEffect } from 'react'
-import { GovBar } from '@/components/layout/gov-bar'
-import { Masthead } from '@/components/layout/masthead'
-import { Footer } from '@/components/layout/footer'
-import { Hero } from '@/components/home/hero'
-import { LiveTicker } from '@/components/home/live-ticker'
-import { DepositAccounts } from '@/components/home/deposit-accounts'
-import { SpendingBreakdown } from '@/components/home/spending-breakdown'
-import { InstitutionalContributions } from '@/components/home/institutional-contributions'
-import { Container } from '@/components/ui/container'
+import { createFileRoute } from "@tanstack/react-router";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+import { GovBar } from "@/components/layout/gov-bar";
+import { Masthead } from "@/components/layout/masthead";
+import { Footer } from "@/components/layout/footer";
+import { Hero } from "@/components/home/hero";
+import { LiveTicker } from "@/components/home/live-ticker";
+import { DepositAccounts } from "@/components/home/deposit-accounts";
+import { SpendingBreakdown } from "@/components/home/spending-breakdown";
+import { InstitutionalContributions } from "@/components/home/institutional-contributions";
+import { Container } from "@/components/ui/container";
 import {
   bankAccounts,
   fundOverview,
@@ -17,19 +17,19 @@ import {
   satelliteStats,
   spendingCategories,
   tickerEntries,
-} from '@/data/relief-fund'
+} from "@/data/relief-fund";
 
-export const Route = createFileRoute('/')({
+export const Route = createFileRoute("/")({
   component: HomePage,
-})
+});
 
 function HomePage() {
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
-    document.title = t('meta.title')
-    document.documentElement.lang = i18n.resolvedLanguage ?? i18n.language
-  }, [t, i18n, i18n.resolvedLanguage])
+    document.title = t("meta.title");
+    document.documentElement.lang = i18n.resolvedLanguage ?? i18n.language;
+  }, [t, i18n, i18n.resolvedLanguage]);
 
   return (
     <div className="min-h-svh bg-paper">
@@ -43,13 +43,18 @@ function HomePage() {
           <DepositAccounts accounts={bankAccounts} />
 
           <div className="flex flex-col gap-9 sm:gap-10">
-            <SpendingBreakdown overview={fundOverview} categories={spendingCategories} />
-            <InstitutionalContributions contributions={institutionalContributions} />
+            <SpendingBreakdown
+              overview={fundOverview}
+              categories={spendingCategories}
+            />
+            <InstitutionalContributions
+              contributions={institutionalContributions}
+            />
           </div>
         </Container>
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
