@@ -7,7 +7,7 @@
     "line2": "Office of the Prime Minister and Council of Ministers"
   },
   "masthead": {
-    "seal": "GoN",
+    "sealAlt": "Emblem of Nepal",
     "title": "Disaster Relief Fund",
     "subtitle": "Prime Minister's Disaster Relief Fund and Prime Minister's Relief Fund"
   },
@@ -19,6 +19,20 @@
     "cr": "Rs {{value, number}} cr",
     "lakh": "Rs {{value, number}} lakh",
     "plain": "Rs {{value, number}}"
+  },
+  "months": {
+    "baisakh": "Baisakh",
+    "jestha": "Jestha",
+    "ashadh": "Ashadh",
+    "shrawan": "Shrawan",
+    "bhadra": "Bhadra",
+    "ashwin": "Ashwin",
+    "kartik": "Kartik",
+    "mangsir": "Mangsir",
+    "poush": "Poush",
+    "magh": "Magh",
+    "falgun": "Falgun",
+    "chaitra": "Chaitra"
   },
   "count": "{{value, number}}",
   "hero": {

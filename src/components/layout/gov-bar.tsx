@@ -4,10 +4,10 @@ import { Container } from '@/components/ui/container'
 export function GovBar() {
   const { t } = useTranslation()
   return (
-    <div className="bg-crimson text-[11px] text-white sm:text-xs">
+    <div className="border-b border-black/10 bg-crimson text-[11px] text-white sm:text-xs">
       <Container className="flex flex-col gap-px py-1.5 sm:h-8.5 sm:flex-row sm:items-center sm:justify-between sm:gap-0 sm:py-0">
-        <span className="opacity-90">{t('govBar.line1')}</span>
-        <span className="opacity-90">{t('govBar.line2')}</span>
+        <span className="font-medium tracking-[0.01em] opacity-95">{t('govBar.line1')}</span>
+        <span className="opacity-80">{t('govBar.line2')}</span>
       </Container>
     </div>
   )

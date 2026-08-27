@@ -3,6 +3,27 @@ export interface Amount {
   unit?: 'cr' | 'lakh'
 }
 
+export type BsMonth =
+  | 'baisakh'
+  | 'jestha'
+  | 'ashadh'
+  | 'shrawan'
+  | 'bhadra'
+  | 'ashwin'
+  | 'kartik'
+  | 'mangsir'
+  | 'poush'
+  | 'magh'
+  | 'falgun'
+  | 'chaitra'
+
+/** A Bikram Sambat calendar date. `year` is omitted where only day and month are shown. */
+export interface BsDate {
+  day: number
+  month: BsMonth
+  year?: number
+}
+
 export interface BankAccount {
   id: string
   bankName: string
@@ -34,6 +55,7 @@ export interface SatelliteStat {
   id: string
   amount?: Amount
   count?: number
+  asOfDate?: BsDate
   meta?: Record<string, string | number>
 }
 
@@ -41,5 +63,5 @@ export interface FundOverview {
   totalAmount: number
   disbursedAmount: number
   disbursedPercent: number
-  asOfDate: string
+  asOfDate: BsDate
 }

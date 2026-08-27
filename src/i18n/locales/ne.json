@@ -7,7 +7,7 @@
     "line2": "प्रधानमन्त्री तथा मन्त्रिपरिषद्‌को कार्यालय"
   },
   "masthead": {
-    "seal": "GoN",
+    "sealAlt": "नेपालको राष्ट्रिय चिन्ह",
     "title": "विपद् राहत कोष",
     "subtitle": "प्रधानमन्त्री विपद् राहत कोष र प्रधानमन्त्री राहत कोष"
   },
@@ -19,6 +19,20 @@
     "cr": "रु {{value, number}} cr",
     "lakh": "रु {{value, number}} lakh",
     "plain": "रु {{value, number}}"
+  },
+  "months": {
+    "baisakh": "बैशाख",
+    "jestha": "जेठ",
+    "ashadh": "असार",
+    "shrawan": "श्रावण",
+    "bhadra": "भदौ",
+    "ashwin": "असोज",
+    "kartik": "कार्तिक",
+    "mangsir": "मंसिर",
+    "poush": "पुष",
+    "magh": "माघ",
+    "falgun": "फागुन",
+    "chaitra": "चैत"
   },
   "count": "{{value, number}}",
   "hero": {

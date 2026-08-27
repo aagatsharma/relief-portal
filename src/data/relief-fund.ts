@@ -13,12 +13,12 @@ export const fundOverview: FundOverview = {
   totalAmount: 84.6,
   disbursedAmount: 12.3,
   disbursedPercent: 14.5,
-  asOfDate: '11 Bhadra 2083',
+  asOfDate: { day: 11, month: 'bhadra', year: 2083 },
 }
 
 export const satelliteStats: SatelliteStat[] = [
   { id: 'remaining', amount: { value: 72.3, unit: 'cr' }, meta: { count: 8 } },
-  { id: 'contributions', count: 48201, meta: { date: '10 Bhadra' } },
+  { id: 'contributions', count: 48201, asOfDate: { day: 10, month: 'bhadra' } },
   { id: 'largest', amount: { value: 2.5, unit: 'cr' } },
   { id: 'abroad', amount: { value: 19.8, unit: 'cr' }, meta: { percent: 23 } },
 ]

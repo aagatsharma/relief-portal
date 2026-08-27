@@ -16,7 +16,7 @@ export function Panel<T extends ElementType = 'div'>({
   return (
     <Component
       className={cn(
-        'rounded-md border border-rule bg-card',
+        'rounded-lg border border-rule bg-card shadow-[var(--shadow-card)]',
         padding === 'md' ? 'p-4 sm:p-5' : 'p-3.5 sm:p-4',
         className,
       )}

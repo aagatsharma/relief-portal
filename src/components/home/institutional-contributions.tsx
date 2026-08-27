@@ -24,24 +24,24 @@ export function InstitutionalContributions({ contributions }: InstitutionalContr
         <table className="w-full border-collapse text-[12.5px] sm:text-[13px]">
           <thead>
             <tr>
-              <th className="border-b border-rule pb-2 text-left text-[10.5px] font-medium tracking-[0.06em] text-faint uppercase sm:text-[11px]">
+              <th className="border-b-2 border-rule pb-2 text-left text-[10.5px] font-medium tracking-[0.06em] text-faint uppercase sm:text-[11px]">
                 {t('institutional.contributorColumn')}
               </th>
-              <th className="border-b border-rule pb-2 text-left text-[10.5px] font-medium tracking-[0.06em] text-faint uppercase sm:text-[11px]">
+              <th className="border-b-2 border-rule pb-2 text-right text-[10.5px] font-medium tracking-[0.06em] text-faint uppercase sm:text-[11px]">
                 {t('institutional.amountColumn')}
               </th>
             </tr>
           </thead>
           <tbody>
             {contributions.map((contribution, index) => (
-              <tr key={contribution.id}>
+              <tr key={contribution.id} className="transition-colors hover:bg-paper">
                 <td
-                  className={`py-2.5 pr-2 ${index === contributions.length - 1 ? '' : 'border-b border-rule'}`}
+                  className={`py-2.5 pr-2 text-ink ${index === contributions.length - 1 ? '' : 'border-b border-rule'}`}
                 >
                   {contribution.contributor}
                 </td>
                 <td
-                  className={`py-2.5 text-right tabular-nums whitespace-nowrap ${
+                  className={`py-2.5 text-right font-medium tabular-nums whitespace-nowrap text-ink ${
                     index === contributions.length - 1 ? '' : 'border-b border-rule'
                   }`}
                 >

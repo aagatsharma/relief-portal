@@ -14,7 +14,7 @@ export function QrGlyph({ seed, className }: QrGlyphProps) {
   return (
     <div
       aria-hidden="true"
-      className={`grid size-14 flex-none grid-cols-5 grid-rows-5 gap-0.5 rounded border border-rule p-1.25 sm:size-15.5 ${className ?? ''}`}
+      className={`grid size-14 flex-none grid-cols-5 grid-rows-5 gap-0.5 rounded-md border border-rule bg-paper p-1.25 sm:size-15.5 ${className ?? ''}`}
     >
       {cells.map((filled, index) => (
         <b key={index} className={`rounded-[1px] ${filled ? 'bg-ink' : 'bg-transparent'}`} />

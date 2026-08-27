@@ -22,15 +22,15 @@ const ICONS: Record<NoticeProps['variant'], ReactNode> = {
 }
 
 const VARIANT_CLASSES: Record<NoticeProps['variant'], string> = {
-  verify: 'bg-accent-bg text-[#0C447C]',
-  warn: 'bg-warn-bg text-warn-ink',
+  verify: 'border-accent/25 bg-accent-bg text-[#0C447C]',
+  warn: 'border-crimson/30 bg-warn-bg text-warn-ink',
 }
 
 export function Notice({ variant, children, className }: NoticeProps) {
   return (
     <div
       className={cn(
-        'mt-3.5 flex gap-2.5 rounded-md p-3.5 text-[13px] leading-relaxed',
+        'mt-3.5 flex gap-2.5 rounded-md border-l-[3px] p-3.5 text-[13px] leading-relaxed',
         VARIANT_CLASSES[variant],
         className,
       )}

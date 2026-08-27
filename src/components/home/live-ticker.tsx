@@ -23,7 +23,7 @@ export function LiveTicker({ entries }: LiveTickerProps) {
   return (
     <div className="border-b border-rule bg-paper">
       <Container className="flex h-10 items-center gap-3 sm:h-11 sm:gap-5">
-        <span className="inline-flex flex-none items-center gap-1.5 rounded-sm bg-live-bg px-2 py-1 text-[11px] text-live sm:gap-1.75 sm:px-2.5 sm:text-xs">
+        <span className="inline-flex flex-none items-center gap-1.5 rounded-full bg-live-bg px-2.5 py-1 text-[11px] font-medium text-live sm:gap-1.75 sm:px-3 sm:text-xs">
           <i className="size-1.25 animate-pulse rounded-full bg-live motion-reduce:animate-none sm:size-1.5" />
           {t('ticker.live')}
         </span>

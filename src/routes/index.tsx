@@ -38,11 +38,11 @@ function HomePage() {
       <Hero overview={fundOverview} satellites={satelliteStats} />
       <LiveTicker entries={tickerEntries} />
 
-      <main className="pt-6 sm:pt-9 lg:pt-11">
-        <Container className="grid grid-cols-1 gap-8 lg:grid-cols-[1.5fr_1fr] lg:gap-12">
+      <main className="pt-7 sm:pt-10 lg:pt-13">
+        <Container className="grid grid-cols-1 gap-9 lg:grid-cols-[1.5fr_1fr] lg:gap-14">
           <DepositAccounts accounts={bankAccounts} />
 
-          <div className="flex flex-col gap-8 sm:gap-9">
+          <div className="flex flex-col gap-9 sm:gap-10">
             <SpendingBreakdown overview={fundOverview} categories={spendingCategories} />
             <InstitutionalContributions contributions={institutionalContributions} />
           </div>

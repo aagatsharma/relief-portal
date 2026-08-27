@@ -11,7 +11,7 @@ export function ProgressBar({ percent, size = 'lg', className }: ProgressBarProp
   return (
     <div
       className={cn(
-        'overflow-hidden rounded-full bg-[#EFEDE7]',
+        'overflow-hidden rounded-full bg-[#EFEDE7] shadow-[inset_0_1px_1.5px_rgba(26,25,23,0.06)]',
         size === 'lg' ? 'h-2.5' : 'h-1.5',
         className,
       )}
@@ -20,7 +20,10 @@ export function ProgressBar({ percent, size = 'lg', className }: ProgressBarProp
       aria-valuemin={0}
       aria-valuemax={100}
     >
-      <div className="h-full rounded-full bg-accent" style={{ width: `${clamped}%` }} />
+      <div
+        className="h-full rounded-full bg-linear-to-r from-accent to-[#0F477F] transition-[width] duration-500 ease-out"
+        style={{ width: `${clamped}%` }}
+      />
     </div>
   )
 }
