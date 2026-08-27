@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-paper: #fbfaf7;
+  --color-card: #ffffff;
+  --color-ink: #1a1917;
+  --color-muted: #6b6862;
+  --color-faint: #94918a;
+  --color-rule: #e3e0d8;
+  --color-accent: #185fa5;
+  --color-accent-bg: #e6f1fb;
+  --color-crimson: #9e2b25;
+  --color-live: #3b6d11;
+  --color-live-bg: #edf3e4;
+  --color-warn-bg: #faeeda;
+  --color-warn-ink: #5c3505;
+
+  --font-sans: 'IBM Plex Sans', 'IBM Plex Sans Devanagari', system-ui, sans-serif;
+  --font-deva: 'IBM Plex Sans Devanagari', 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Matches the design's collapse breakpoint between the desktop and mobile mockups. */
+  --breakpoint-lg: 60rem;
+
+  --animate-ticker: ticker-scroll 28s linear infinite;
+}
+
+@keyframes ticker-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

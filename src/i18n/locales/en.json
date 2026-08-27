@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "title": "Disaster Relief Fund"
+  },
+  "sampleBanner": "Illustrative mockup — figures and account numbers are sample data, not live",
+  "govBar": {
+    "line1": "Government of Nepal",
+    "line2": "Office of the Prime Minister and Council of Ministers"
+  },
+  "masthead": {
+    "seal": "GoN",
+    "title": "Disaster Relief Fund",
+    "subtitle": "Prime Minister's Disaster Relief Fund and Prime Minister's Relief Fund"
+  },
+  "languages": {
+    "ne": "नेपाली",
+    "en": "English"
+  },
+  "amount": {
+    "cr": "Rs {{value, number}} cr",
+    "lakh": "Rs {{value, number}} lakh",
+    "plain": "Rs {{value, number}}"
+  },
+  "count": "{{value, number}}",
+  "hero": {
+    "eyebrow": "Total collected",
+    "unit": "crore",
+    "disbursedLabel": "{{amount}} disbursed",
+    "percentOfCollections": "{{percent, number}}% of collections"
+  },
+  "ticker": {
+    "live": "Live",
+    "minutesAgo_one": "{{count, number}} min ago",
+    "minutesAgo_other": "{{count, number}} min ago"
+  },
+  "satellites": {
+    "remaining": {
+      "label": "Remaining",
+      "hint": "across {{count, number}} accounts"
+    },
+    "contributions": {
+      "label": "Contributions",
+      "hint": "since {{date}}"
+    },
+    "largest": {
+      "label": "Largest single",
+      "hint": "institutional"
+    },
+    "abroad": {
+      "label": "From abroad",
+      "hint": "{{percent, number}}% of total"
+    }
+  },
+  "deposit": {
+    "title": "Deposit accounts",
+    "subtitle": "Scan the QR with any mobile banking or wallet app, or transfer to the account number shown.",
+    "verifyNotice": "Before you confirm payment, your banking app must display the recipient name <strong>PM DISASTER RELIEF FUND</strong> or <strong>PM RELIEF FUND</strong>. If it shows any other name, stop and do not send.",
+    "warnNotice": "These eight accounts are the only official channels. The Government of Nepal is not collecting relief funds through any other account, QR code, payment link or crowdfunding page.",
+    "internationalTitle": "From outside Nepal",
+    "internationalSubtitle": "SWIFT transfers, correspondent bank details and foreign-currency instructions.",
+    "internationalCta": "View wire transfer details"
+  },
+  "spending": {
+    "title": "Where the money has gone",
+    "asOf": "{{amount}} disbursed as of {{date}}",
+    "categories": {
+      "families": "Relief payments to families",
+      "rescue": "Search and rescue",
+      "shelter": "Shelter and food",
+      "medical": "Medical treatment"
+    }
+  },
+  "institutional": {
+    "title": "Institutional contributions",
+    "subtitle": "Contributions above Rs {{value, number}} lakh, published with consent.",
+    "contributorColumn": "Contributor",
+    "amountColumn": "Amount",
+    "download": "Download full ledger (CSV)"
+  },
+  "footer": {
+    "methodologyLabel": "How these figures are produced.",
+    "methodology": "Account balances are read directly from each participating bank over a read-only interface and refreshed every 15 minutes. No figure on this page is entered by hand. Disbursement data is published from the fund's transaction ledger.",
+    "office": "Office of the Prime Minister and Council of Ministers",
+    "address": "Singha Durbar, Kathmandu",
+    "helpline": "Helpline 1234"
+  }
+}
