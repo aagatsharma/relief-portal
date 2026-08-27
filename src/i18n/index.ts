@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import en from '@/i18n/locales/en.json'
 import ne from '@/i18n/locales/ne.json'
+import { formatNumber } from '@/i18n/format-number'
 
 export const SUPPORTED_LANGUAGES = ['ne', 'en'] as const
 export type SupportedLanguage = (typeof SUPPORTED_LANGUAGES)[number]
@@ -27,5 +28,7 @@ void i18n
       lookupLocalStorage: 'relief-fund-language',
     },
   })
+
+i18n.services.formatter?.add('number', formatNumber)
 
 export default i18n

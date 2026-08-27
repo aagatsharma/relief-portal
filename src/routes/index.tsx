@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react'
-import { SampleBanner } from '@/components/layout/sample-banner'
 import { GovBar } from '@/components/layout/gov-bar'
 import { Masthead } from '@/components/layout/masthead'
 import { Footer } from '@/components/layout/footer'
@@ -34,7 +33,6 @@ function HomePage() {
 
   return (
     <div className="min-h-svh bg-paper">
-      <SampleBanner />
       <GovBar />
       <Masthead />
       <Hero overview={fundOverview} satellites={satelliteStats} />
